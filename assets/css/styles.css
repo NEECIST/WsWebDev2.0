@@ -174,6 +174,12 @@ body.light-theme{
   color: var(--text-color-light);
 }
 
+.hidden {
+  display: none!important;
+  visibility: hidden;
+  opacity: 0;
+}
+
 /*=============== HEADER & NAV===============*/
 .header{
   position: fixed;
@@ -273,10 +279,11 @@ body.light-theme{
 }
 
 .home__social{
-  bottom: 5rem;
   left: 0;
   display: grid;
-  row-gap: .5rem;
+  row-gap: 0.5rem;
+  align-content: center;
+  height: 100%;
 }
 
 .home__social-link{
@@ -284,7 +291,7 @@ body.light-theme{
   background-color: var(--container-color);
   color: var(--first-color);
   padding: .25rem;
-  border-radius: .25rem;
+      border-radius: 0 0.25rem 0.25rem 0;
   display: flex;
   font-size: 1rem;
   transition: .4s;
@@ -459,6 +466,9 @@ body.light-theme{
 .work__img{
   border-radius: 1rem;
   margin-bottom: .75rem;
+  max-height: 275.5px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .work__title{
@@ -501,6 +511,7 @@ body.light-theme{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 .popout__item{
@@ -512,7 +523,7 @@ body.light-theme{
   background-color: var(--container-color);
   border-radius: 2.7rem;
   display: flex;
-  
+  transition: 0.6s ease;
   flex-direction: column;
 }
 .popout__header{
@@ -521,10 +532,10 @@ body.light-theme{
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  height: 12%;
+  height: 17%;
 }
 
-.popout__header > i{
+.popout__header  i{
   margin: 0 40px;
   cursor: pointer;
   padding: 0.3rem 0.5rem;
@@ -543,9 +554,47 @@ body.light-theme{
 .popout__carrousel{
   height: 35%;
   width: 100%;
-  background-color: purple;
-
+  background-color: #282e39;
+  position: relative;
 }
+
+.popout__carrousel img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
 .popout__main{
   width: 100%;
   display: flex;
@@ -798,7 +847,7 @@ height: 4rem;
   }
 
   .work__img{
-    width: 295px;
+    /*width: 295px;*/
   }
 
   .contact__info{

@@ -16,7 +16,7 @@ let mixerPortfolio = mixitup('.work__container', {
         duration: 300
     },
     callbacks: {
-        onMixClick: function(state, originalEvent) {
+        onMixClick: function (state, originalEvent) {
             linkWork.forEach(l => l.classList.remove('active-work'))
             this.classList.add('active-work')
             console.log('The control "' + this.innerText + '" was clicked');
@@ -24,7 +24,7 @@ let mixerPortfolio = mixitup('.work__container', {
     }
 });
 
-/* Link active work */ 
+/* Link active work */
 //
 //function activeWork(){
 //    linkWork.forEach(l => l.classList.remove('active-work'))
@@ -39,24 +39,24 @@ let mixerPortfolio = mixitup('.work__container', {
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
             sectionTop = current.offsetTop - 58,
             sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
+        } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== LIGHT DARK THEME ===============*/ 
+/*=============== LIGHT DARK THEME ===============*/
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
 const iconTheme = 'bx-sun'
@@ -70,7 +70,7 @@ const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'da
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
 
 //We validate if the user previously chose a topic
-if (selectedTheme){
+if (selectedTheme) {
     //If the validation is fulfilled, we ask what the issue was to know if we activated ou deactivated the light
     document.body.classList[selectedTheme == 'dark' ? 'add' : 'remove'](lightTheme)
     themeButton.classList[selectedIcon == 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
@@ -96,3 +96,68 @@ const sr = ScrollReveal({
 })
 
 sr.reveal('.home__data')
+
+
+/*================ POPOUT CARDS ===================*/
+
+function closePopout(element) {
+    var card = element.parentElement.parentElement;
+    var bgBox = card.parentElement;
+    card.classList.add("hidden");
+    bgBox.classList.add("hidden");
+}
+
+function openPopout(callingElement) {
+    document.getElementById('card-' + callingElement.id).classList.remove('hidden');
+    document.getElementById('card-' + callingElement.id).parentElement.classList.remove('hidden');
+}
+
+
+/*================ Carrousel ====================*/
+
+
+function imgForward(element) {
+    var carousel = element.parentElement;
+    console.log(carousel);
+
+    var imgs = carousel.getElementsByClassName('imgs');
+    var imgsArr = Array.from(imgs);
+    imgsArr.every((img, index) => {
+        if (img.className.indexOf('hidden') == -1) {
+            imgs[index].classList.add('hidden')
+            if (index == imgsArr.length - 1) {
+                console.log(index)
+                imgs[0].classList.remove('hidden');
+                return false;
+            } else {
+                console.log(index, "teste")
+                imgs[index + 1].classList.remove('hidden');
+                return false;
+            }
+        }
+        return true;
+    });
+}
+
+function imgBackward(element) {
+    var carousel = element.parentElement;
+    console.log(carousel);
+
+    var imgs = carousel.getElementsByClassName('imgs');
+    var imgsArr = Array.from(imgs);
+    imgsArr.every((img, index) => {
+        if (img.className.indexOf('hidden') == -1) {
+            imgs[index].classList.add('hidden')
+            if (index == 0) {
+                imgs[imgsArr.length -1].classList.remove('hidden');
+                return false;
+            } else {
+                imgs[index - 1].classList.remove('hidden');
+                return false;
+            }
+        }
+        return true;
+    });
+
+
+}
