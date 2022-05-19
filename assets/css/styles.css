@@ -13,7 +13,7 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 174;
+  --first-hue: 198;
   --sat: 90%;
   --lig: 72%;
   --second-hue: 240;
@@ -208,29 +208,6 @@ body.light-theme{
   color: var(--first-color-alt);
 }
 
-.nav__menu{
-  position: fixed;
-  bottom: 1rem;
-  background-color: hsl(var(--second-hue), 32%, 16%, .8);
-  width: 90%;
-  border-radius: 4rem;
-  padding: 1rem 2.25rem;
-  backdrop-filter: blur(10px);
-}
-
-.nav__list{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav__link{
-  color: var(--text-color);
-  font-size: 1.25rem;
-  padding: .4rem;
-  display: flex;
-  border-radius: 5rem;
-}
 
 
 /* Active link */

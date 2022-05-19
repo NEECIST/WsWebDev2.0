@@ -23,39 +23,6 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a class="nav__logo">NEEC IST</a>
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home-alt-2"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="bx bx-user"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="bx bx-book"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#work" class="nav__link">
-                <i class="bx bx-briefcase-alt-2"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="bx bx-message-square-detail"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
 
         <!-- Theme change button -->
         <i class="bx bx-moon change-theme" id="theme-button"></i>
@@ -64,38 +31,14 @@
     <!--=============== MAIN ===============-->
     <main class="main">
       <div class="home__social">
+        <a href="https://www.instagram.com/neecist/" class="home__social-link">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
+          <i class="bx bxl-facebook"></i>
+        </a>
         <a href="https://www.linkedin.com/in/margaridaaranha" class="home__social-link">
           <i class="bx bxl-linkedin"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
-          <i class="bx bxl-github"></i>
         </a>
         <a href="https://github.com/NEECIST/WsWebDev2.0.git" class="home__social-link">
           <i class="bx bxl-github"></i>
@@ -105,7 +48,7 @@
       <section class="home section" id="home">
         <div class="home__data">
           <div class="home__container container grid">
-            <span class="home__greeting">Olá 👋</span>
+            <span class="home__greeting">Olá 👋, nós somos o</span>
             <h1 class="home__name">NEEC</h1>
             <h3 class="home__education">o Núcleo de Estudantes de Electrotecnia e Computadores</h3>
 
@@ -287,66 +230,67 @@
 
         <div class="work__filters">
           <span class="work__item active-work" data-filter="all">All</span>
-          <span class="work__item" data-filter=".web">Web</span>
-          <span class="work__item" data-filter=".movil">Movil</span>
-          <span class="work__item" data-filter=".design">Design</span>
+          <span class="work__item" data-filter=".programacao">Programação</span>
+          <span class="work__item" data-filter=".eletronica">Electrónica</span>
+          <span class="work__item" data-filter=".energia">Energia</span>
+          <span class="work__item" data-filter=".robotica">Robótica</span>
         </div>
 
         <div class="work__container container grid">
-          <div class="work__card mix web">
-            <img src="assets/img/bananeec.png" alt="" class="work__img" />
+          <div class="work__card mix programacao">
+            <img src="assets/img/python1.jpg" alt="" class="work__img" />
 
-            <h3 class="work__title">Bananeec</h3>
+            <h3 class="work__title">Python</h3>
 
-            <a onclick="openPopout(this)" id="bananeec" class="work__button"> Demo <i class="bx bx-right-arrow-alt work__icon"></i> </a>
+            <a onclick="openPopout(this)" id="python" class="work__button"> Mais informações <i class="bx bx-right-arrow-alt work__icon"></i> </a>
           </div>
 
-          <div class="work__card mix movil">
-            <img src="assets/img/work2.jpg" alt="" class="work__img" />
+          <div class="work__card mix eletronica programacao">
+            <img src="assets/img/neecduino.jpg" alt="" class="work__img" />
 
-            <h3 class="work__title">NEECSimon</h3>
+            <h3 class="work__title">Arduino</h3>
 
-            <a onclick="openPopout(this)" id="neecsimon" class="work__button"> Mais informações <i class="bx bx-right-arrow-alt work__icon"></i> </a>
+            <a onclick="openPopout(this)" id="arduino" class="work__button"> Mais informações <i class="bx bx-right-arrow-alt work__icon"></i> </a>
           </div>
 
-          <div class="work__card mix design">
-            <img src="assets/img/work3.jpg" alt="" class="work__img" />
+          <div class="work__card mix energia">
+            <img src="assets/img/levitaneec1.JPG" alt="" class="work__img" />
 
-            <h3 class="work__title">Brand design</h3>
+            <h3 class="work__title">LevitaNEEC</h3>
 
-            <a onclick="openPopout(this)" class="work__button"> Demo <i class="bx bx-right-arrow-alt work__icon"></i> </a>
+            <a onclick="openPopout(this)" id="levitaneec" class="work__button"> Mais informações <i class="bx bx-right-arrow-alt work__icon"></i> </a>
           </div>
 
-          <div class="work__card mix web">
-            <img src="assets/img/work4.jpg" alt="" class="work__img" />
+          <div class="work__card mix programacao">
+            <img src="assets/img/webdev1.jpg" alt="" class="work__img" />
 
-            <h3 class="work__title">Web design</h3>
+            <h3 class="work__title">Web Dev</h3>
 
-            <a onclick="openPopout(this)" class="work__button"> Demo <i class="bx bx-right-arrow-alt work__icon"></i> </a>
+            <a onclick="openPopout(this)" id="webdev" class="work__button"> Mais informações <i class="bx bx-right-arrow-alt work__icon"></i> </a>
           </div>
 
-          <div class="work__card mix movil">
-            <img src="assets/img/work5.jpg" alt="" class="work__img" />
+          <div class="work__card mix eletronica robotica">
+            <img src="assets/img/neecbot3.JPG" alt="" class="work__img" />
 
-            <h3 class="work__title">App movil</h3>
+            <h3 class="work__title">NEECBot</h3>
 
-            <a onclick="openPopout(this)" class="work__button"> Demo <i class="bx bx-right-arrow-alt work__icon"></i> </a>
+            <a onclick="openPopout(this)" id="neecbot" class="work__button"> Mais informações <i class="bx bx-right-arrow-alt work__icon"></i> </a>
           </div>
         </div>
         <div class="popout__container hidden">
-          <div id="card-bananeec" class="popout__item hidden">
+          <div id="card-python" class="popout__item hidden">
             <div class="popout__header">
               <div class="popout__title">
-                <h1>Bananeec</h1>
+                <h1>Python</h1>
               </div>
               <a onclick="closePopout(this); return">
                 <i class="bx bx-x"></i>
               </a>
             </div>
             <div class="popout__carrousel">
-              <img class="imgs" src="assets/img/bananeec.png" alt="bananeec" />
-              <img class="imgs hidden" src="assets/img/work1.jpg" alt="bananeec" />
-              <img class="imgs hidden" src="assets/img/work2.jpg" alt="bananeec" />
+              <img class="imgs" src="assets/img/python1.JPG" alt="python" />
+              <img class="imgs hidden" src="assets/img/python2.JPG" alt="python" />
+              <img class="imgs hidden" src="assets/img/python3.JPG" alt="python" />
               <a class="prev" onclick="imgBackward(this)">&#10094;</a>
               <a class="next" onclick="imgForward(this)">&#10095;</a>
             </div>
@@ -361,29 +305,91 @@
               </div>
             </div>
           </div>
-          <div id="card-neecsimon" class="popout__item hidden">
+          <div id="card-arduino" class="popout__item hidden">
             <div class="popout__header">
               <div class="popout__title">
-                <h1>Bananeec</h1>
+                <h1>Arduino</h1>
               </div>
               <a onclick="closePopout(this); return">
                 <i class="bx bx-x"></i>
               </a>
             </div>
             <div class="popout__carrousel">
-              <img class="imgs" src="assets/img/bananeec.png" alt="bananeec" />
-              <img class="imgs hidden" src="assets/img/work1.jpg" alt="bananeec" />
-              <img class="imgs hidden" src="assets/img/work2.jpg" alt="bananeec" />
+              <img class="imgs" src="assets/img/bananeec.png" alt="python" />
+              <img class="imgs hidden" src="assets/img/tironeec.jpg" alt="python" />
+              <img class="imgs hidden" src="assets/img/NEEConsola.jpg" alt="python" />
               <a class="prev" onclick="imgBackward(this)">&#10094;</a>
               <a class="next" onclick="imgForward(this)">&#10095;</a>
             </div>
             <div class="popout__main">
               <div class="popout__text">
-                This the Simon game in a portable console, designed by our members. The game presents a sequence of colours, which the player must reproduce in the correct order in order to win points and move across levels.
+                This the Simon game in a portable console, designed by our members. The game presents a sequence of colours, which the player must reproduce in the correct order in order to win points
+                and move across levels.
               </div>
               <div class="popout__links">
                 <ul>
-                    <li><a class="work__button" href="https://github.com/NEECIST/NEECSimon"><i class='work-icon bx bxl-github'></i> Github</a></li>
+                  <li>
+                    <a class="work__button" href="https://github.com/NEECIST/NEECSimon"><i class="work-icon bx bxl-github"></i> Github</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="card-levitaneec" class="popout__item hidden">
+            <div class="popout__header">
+              <div class="popout__title">
+                <h1>LevitaNEEC</h1>
+              </div>
+              <a onclick="closePopout(this); return">
+                <i class="bx bx-x"></i>
+              </a>
+            </div>
+            <div class="popout__carrousel">
+              <img class="imgs" src="assets/img/levitaneec1.JPG" alt="python" />
+              <img class="imgs hidden" src="assets/img/levitaneec2.JPG" alt="python" />
+              <img class="imgs hidden" src="assets/img/levitaneec3.JPG" alt="python" />
+              <a class="prev" onclick="imgBackward(this)">&#10094;</a>
+              <a class="next" onclick="imgForward(this)">&#10095;</a>
+            </div>
+            <div class="popout__main">
+              <div class="popout__text">
+                This the Simon game in a portable console, designed by our members. The game presents a sequence of colours, which the player must reproduce in the correct order in order to win points
+                and move across levels.
+              </div>
+              <div class="popout__links">
+                <ul>
+                  <li>
+                    <a class="work__button" href="https://github.com/NEECIST/NEECSimon"><i class="work-icon bx bxl-github"></i> Github</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="card-neecbot" class="popout__item hidden">
+            <div class="popout__header">
+              <div class="popout__title">
+                <h1>NEECBot</h1>
+              </div>
+              <a onclick="closePopout(this); return">
+                <i class="bx bx-x"></i>
+              </a>
+            </div>
+            <div class="popout__carrousel">
+              <img class="imgs" src="assets/img/neecbot1.JPG" alt="python" />
+              <img class="imgs hidden" src="assets/img/neecbot2.png" alt="python" />
+              <img class="imgs hidden" src="assets/img/neecbot3.JPG" alt="python" />
+              <a class="prev" onclick="imgBackward(this)">&#10094;</a>
+              <a class="next" onclick="imgForward(this)">&#10095;</a>
+            </div>
+            <div class="popout__main">
+              <div class="popout__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nam dolores porro similique sint. Ipsam ad natus facilis autem laborum rem illum? Autem sequi dignissimos delectus omnis quasi numquam doloribus.
+              </div>
+              <div class="popout__links">
+                <ul>
+                  <li>
+                    <a class="work__button" href="https://github.com/NEECIST/NEECSimon"><i class="work-icon bx bxl-github"></i> Github</a>
+                  </li>
                 </ul>
               </div>
             </div>
