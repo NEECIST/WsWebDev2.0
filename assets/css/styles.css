@@ -13,10 +13,10 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 207;
+  --first-hue: 174;
   --sat: 90%;
   --lig: 72%;
-  --second-hue: 219;
+  --second-hue: 240;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
@@ -24,6 +24,7 @@
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
+
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -341,10 +342,14 @@ body.light-theme{
 .about__data{
   text-align: center;
 }
+.about__data > img {
+  width: 50vw;
+}
 
 .about__info{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   gap: .5rem;
   margin-bottom: 2rem;
 }
@@ -516,7 +521,7 @@ body.light-theme{
 
 .popout__item{
   position: absolute;
-  width: 75vh;
+  width: 95vw;
   height: 75vh;
   background: white;
   margin: auto;
@@ -525,6 +530,7 @@ body.light-theme{
   display: flex;
   transition: 0.6s ease;
   flex-direction: column;
+  
 }
 .popout__header{
   display: flex;
@@ -599,6 +605,7 @@ body.light-theme{
   width: 100%;
   display: flex;
   padding: 20px;
+  height: 43%;
 }
 .popout__text{
   width: 66%;
@@ -800,6 +807,10 @@ height: 4rem;
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .about__data > img {
+    width: 80vw;
+  }
+
   .skills__box{
     column-gap: 1 rem;
   }
@@ -814,6 +825,21 @@ height: 4rem;
 
   .work__filters{
     column-gap: .25rem;
+  }
+  
+}
+@media screen and (max-width:576px){
+  .popout__main{
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .popout__text{
+    width: 100%;
+    padding-bottom: 3%;
+  }
+  .popout__links{
+    width: 100%;
   }
 }
 
@@ -832,6 +858,9 @@ height: 4rem;
 
   .about__description{
     padding: 0 5rem;
+  }
+  .about__data > img {
+    width: 45vw;
   }
 
   .skills__container{
@@ -858,6 +887,13 @@ height: 4rem;
   .contact__form{
     width: 360px;
     margin: 0 auto;
+  }
+  
+}
+
+@media screen and (min-width: 650px){
+  .popout__item{
+    width: 75vh;
   }
 }
 

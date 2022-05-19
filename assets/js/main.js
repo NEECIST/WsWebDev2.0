@@ -149,7 +149,7 @@ function imgBackward(element) {
         if (img.className.indexOf('hidden') == -1) {
             imgs[index].classList.add('hidden')
             if (index == 0) {
-                imgs[imgsArr.length -1].classList.remove('hidden');
+                imgs[imgsArr.length - 1].classList.remove('hidden');
                 return false;
             } else {
                 imgs[index - 1].classList.remove('hidden');
@@ -159,5 +159,34 @@ function imgBackward(element) {
         return true;
     });
 
+
+}
+
+
+/*================= Submit form ==============*/
+
+
+function submitForm() {
+    console.log("teste")
+
+
+
+    
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/976799723119865917/d7RoBMQsbb-y_b7hIJW9KH8_Do5wbXRTxyeofGMHxbkHybIUtQpaieN1MObNZ-O6doB6");
+
+    request.setRequestHeader('Content-type', 'application/json');
+
+    const params = {
+        username: "New webpage form submission",
+        avatar_url: "",
+        content: "The message to send @here",
+        "embeds": [{
+            "title": "Hello!",
+            "description": "Hi! :grinning:"
+        }]
+    }
+
+    request.send(JSON.stringify(params));
 
 }
