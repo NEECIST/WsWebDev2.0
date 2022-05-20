@@ -93,6 +93,7 @@ h1, h2, h3 {
 
 ul {
   list-style: none;
+  text-align: center;
 }
 
 a {
@@ -429,6 +430,7 @@ body.light-theme{
   align-items: center;
   column-gap: .75rem;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .work__item{
@@ -713,7 +715,7 @@ height: 4rem;
   color: var(--body-color);
 }
 
-.footer_title{
+.footer__title{
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -804,6 +806,7 @@ height: 4rem;
     column-gap: .25rem;
   }
   
+  
 }
 @media screen and (max-width:576px){
   .popout__main{
@@ -817,6 +820,9 @@ height: 4rem;
   }
   .popout__links{
     width: 100%;
+  }
+  .contact__container{
+    grid-template-columns: auto;
   }
 }
 
