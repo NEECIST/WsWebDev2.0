@@ -126,11 +126,9 @@ function imgForward(element) {
         if (img.className.indexOf('hidden') == -1) {
             imgs[index].classList.add('hidden')
             if (index == imgsArr.length - 1) {
-                console.log(index)
                 imgs[0].classList.remove('hidden');
                 return false;
             } else {
-                console.log(index, "teste")
                 imgs[index + 1].classList.remove('hidden');
                 return false;
             }

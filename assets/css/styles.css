@@ -354,6 +354,7 @@ body.light-theme{
 
 .about__description{
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 /*=============== SKILLS ===============*/
@@ -856,10 +857,6 @@ height: 4rem;
 
   .work__container{
     justify-content: center;
-  }
-
-  .work__img{
-    /*width: 295px;*/
   }
 
   .contact__info{
