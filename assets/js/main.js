@@ -123,9 +123,9 @@ function imgForward(element) {
     
     
     imgsArr.every((img, index) => {
-        if () {
+        if (1) {
             
-            if () {
+            if (1) {
                 
                 return false;
             } else {
