@@ -1,8 +1,4 @@
 <div id="top"></div>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Stargazers][stars-shield]][stars-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
