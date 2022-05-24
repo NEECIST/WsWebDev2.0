@@ -811,23 +811,7 @@ height: 4rem;
   
   
 }
-@media screen and (max-width:576px){
-  .popout__main{
-    flex-direction: column;
-    overflow-y: auto;
-  }
 
-  .popout__text{
-    width: 100%;
-    padding-bottom: 3%;
-  }
-  .popout__links{
-    width: 100%;
-  }
-  .contact__container{
-    grid-template-columns: auto;
-  }
-}
 
 /* For medium devices */
 @media screen and (min-width: 576px){
@@ -873,11 +857,6 @@ height: 4rem;
   
 }
 
-@media screen and (min-width: 650px){
-  .popout__item{
-    width: 75vh;
-  }
-}
 
 /* For large devices */
 @media screen and (min-width: 992px){
