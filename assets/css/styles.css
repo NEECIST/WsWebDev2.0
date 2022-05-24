@@ -17,13 +17,14 @@
   --sat: 90%;
   --lig: 72%;
   --second-hue: 240;
+  /* VASCO (2) - Definir variáveis que dependem de outras classes
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); -4% 
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --container-color: hsl(var(--second-hue), 32%, 12%); */
 
 
   /*========== Font and typography ==========*/
@@ -113,6 +114,7 @@ img {
 
 /*=============== THEME ===============*/
 
+/*  VASCO (1) - Definir classe e variáveis
 .change-theme{
   font-size: 1.25rem;
   cursor: pointer;
@@ -121,7 +123,7 @@ img {
 
 .change-theme:hover{
   color: var(--first-color);
-}
+} */
 
 
 /*========== Variables Light theme ==========*/
