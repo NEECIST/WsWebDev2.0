@@ -122,16 +122,16 @@ function imgForward(element) {
     var carousel = element.parentElement;
     console.log(carousel);
 
-    var imgs = carousel.getElementsByClassName('imgs');
-    var imgsArr = Array.from(imgs);
+    
+    
     imgsArr.every((img, index) => {
-        if (img.className.indexOf('hidden') == -1) {
-            imgs[index].classList.add('hidden')
-            if (index == imgsArr.length - 1) {
-                imgs[0].classList.remove('hidden');
+        if (1) {
+            
+            if (1) {
+                
                 return false;
             } else {
-                imgs[index + 1].classList.remove('hidden');
+                
                 return false;
             }
         }
