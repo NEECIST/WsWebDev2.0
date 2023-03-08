@@ -31,6 +31,11 @@ Este projeto apresenta um portfólio básico e fácil de alterar. Quer te esteja
 
 Para dar deploy ao website recomendamos o uso das plataformas [Github Pages](https://pages.github.com) ou [Netlify](https://app.netlify.com).
 
+
+## Apresentação
+
+Apresentação disponível em https://docs.google.com/presentation/d/1CCU0IXunnYN2EjyT0of5s-RfpuTvKByA7-Cn3gYA8kU/edit?usp=sharing 
+
 <!-- CONTACT -->
 ## Contactos
 
